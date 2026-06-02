@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Проверка функций</title>
+</head>
+<body>
+    <h2>Проверка calculateTotalMortgage</h2>
+    <p>Откройте консоль (F12), чтобы увидеть результаты</p>
+    
+    <script src="./task.js"></script>
+    <script>
+        console.log("=== Проверка calculateTotalMortgage ===");
+        console.log("10, 0, 50000, 12 →", calculateTotalMortgage(10, 0, 50000, 12));  // 52749.53
+        console.log("10, 1000, 50000, 12 →", calculateTotalMortgage(10, 1000, 50000, 12)); // 51694.54
+        console.log("10, 0, 20000, 24 →", calculateTotalMortgage(10, 0, 20000, 24)); // 22149.56
+        console.log("10, 1000, 20000, 24 →", calculateTotalMortgage(10, 1000, 20000, 24)); // 21042.09
+        console.log("10, 20000, 20000, 24 →", calculateTotalMortgage(10, 20000, 20000, 24)); // 0
+        console.log("10, 0, 10000, 36 →", calculateTotalMortgage(10, 0, 10000, 36)); // 11616.19
+        console.log("15, 0, 10000, 36 →", calculateTotalMortgage(15, 0, 10000, 36)); // 12479.52
+        
+        // Проверка solveEquation
+        console.log("\n=== Проверка solveEquation ===");
+        console.log("solveEquation(1, 5, 4) →", solveEquation(1, 5, 4)); // [-1, -4]
+        console.log("solveEquation(1, 2, 1) →", solveEquation(1, 2, 1)); // [-1]
+        console.log("solveEquation(1, 2, 10) →", solveEquation(1, 2, 10)); // []
+    </script>
+</body>
+</html>
